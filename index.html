@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Экзамен - Виктор Шарко</title>
+	
+	<link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
+	<link rel="manifest" href="assets/favicons/manifest.json">
+	<link rel="mask-icon" href="assets/favicons/safari-pinned-tab.svg" color="#5bbad5">
+	<link rel="shortcut icon" href="assets/favicons/favicon.ico">
+	<meta name="msapplication-config" content="assets/favicons/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
+
+
+    <!-- Bootstrap Core CSS -->
+    <link href="http://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll visible-xs visible-sm" href="#page-top">Nova Board</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li>
+                        <a class="page-scroll visible-md visible-lg" href="#page-top">главная</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">о компании</a>
+                    </li>
+					 <li>
+                        <a class="page-scroll" href="#vacations">вакансии</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#services">продукция</a>
+                    </li>
+					<li>
+                        <a class="page-scroll" href="#photo">фотогалереи</a>
+                    </li>
+					<li>
+                        <a class="page-scroll visible-xs visible-md visible-lg" href="404.html">новости</a>
+                    </li>
+					<li>
+                        <a class="page-scroll visible-md visible-lg" href="404.html">статьи</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">контакты</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Intro Section -->
+    <section id="intro">
+        <div class="container">
+            <div class="container-fluid">
+                <div class="row-fluid">
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                        <img src="assets/img/logo.png" alt="">
+                    </div>
+
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                        <table class="frst-tbl">
+                            <tr>
+                                <td><a href="#" data-toggle="modal" data-target="#LoginModal" title="Вызвать окно авторизации">Вход</a></td>
+                                <td>&nbsp;мы в социальных сетях
+
+                                    <div class="social">
+                                        <a href="#" class="linkedin-green">&ensp;</a>
+                                        <a href="#" class="vc-green">&ensp;</a>
+                                    </div>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">тел:+38(0552)314-410, 314-403; факс:+38(0552)359-214<br>
+                                    e-mail:info@penoboard.com</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <form method="post" >
+                                        <input name="search" placeholder="" type="search">
+                                        <button type="submit" class="btn btn-default">
+                                            <span class="glyphicon glyphicon-zoom-in" aria-hidden="true"></span>
+                                        </button>
+                                    </form>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div id="myCarousel" class="carousel slide shadowar" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                    <li data-target="#myCarousel" data-slide-to="3"></li>
+                    <li data-target="#myCarousel" data-slide-to="4"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+
+                    <div class="item active">
+                        <img src="assets/img/slide_1.jpg" alt="Chania" width="460" height="345">
+                        <div class="carousel-caption">
+                            <h3>Сегодня инновация &ndash;</h3>
+                            <h3>завтра необходимость</h3>
+                            <p>энергосбережение нового поколения</p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="assets/img/slide_2.jpg" alt="Chania" width="460" height="345">
+                        <div class="carousel-caption">
+                            <h3>Chania</h3>
+                            <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="assets/img/slide_3.jpg" alt="Flower" width="460" height="345">
+                        <div class="carousel-caption">
+                            <h3>Flowers</h3>
+                            <p>Beautiful flowers in Kolymbari, Crete.</p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="assets/img/slide_4.jpg" alt="Flower" width="460" height="345">
+                        <div class="carousel-caption">
+                            <h3>Flowers</h3>
+                            <p>Beautiful flowers in Kolymbari, Crete.</p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="assets/img/slide_5.jpg" alt="Flower" width="460" height="345">
+                        <div class="carousel-caption">
+                            <h3>Flowers</h3>
+                            <p>Beautiful flowers in Kolymbari, Crete.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" >
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <img src="assets/img/logo2.png" alt="" class="center-block">
+                    <h1>Экструдированный  пенополистирол</h1>
+                    <!-- id="player" -->
+                    <div class="video-holder center-block shadowar">
+                    <div id="player"></div>
+                    </div>
+                    <article class="center-block">
+                        <p>Многолетний опыт применения экструдированного пенополистирола в различных отраслях строительства доказывает высокую эффективность его использования. Наша компания производит экструдированный пенополистирол на высококачественном европейском оборудовании, соблюдая мировые стандарты качества.</p>
+                        <p>Торговая марка <strong>NOVABOARD</strong> много лет на украинском рынке и за это время мы не только вышли на лидирующие позиции, но и доказали, что NOVABOARD &ndash; это гарантия качества, проверенная временем. Наш бренд - это наша репутация.
+                            Мы завоевываем ее, легко справляясь с любыми задачами. Это понимают наши партнеры в
+                            процессе взаимодействия с нами.</p>
+                    </article>
+
+                    <a type="button" class="btn btn-success btn-lg center-block" href="text.html">узнать подробнее</a>
+
+                </div>
+            </div>
+        </div>
+    </section>
+	
+	<!-- Vacations Section -->
+    <section id="vacations" >
+        <div class="container">
+
+                    <h1>сфера применения</h1>
+
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                        <div class="build1">
+                            <h2>гражданское строительство</h2>
+                            <ul>
+                                <li>жилые дома</li>
+                                <li>офисные здания</li>
+                                <li>торгово - развлекательные комплексы</li>
+                            </ul>
+                            <p><img src="assets/img/logo-miniwhite.png" alt="">NOVABOARD</p>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                        <div class="build2">
+                            <h2>промышленное строительство</h2>
+                            <ul>
+                                <li>спортивные сооружения &ndash; ледовые арены</li>
+                                <li>ангары и склады</li>
+                                <li>заводы и фабрики</li>
+                            </ul>
+                            <p><img src="assets/img/logo-miniwhite.png" alt="">NOVABOARD</p>
+                        </div>
+                    </div>
+                </div>
+
+
+            <div class="container-fluid cads-block">
+                        <a class="cards">
+                            <p><img src="assets/img/card01.png" alt=""></p>
+                            <p>балконы и лоджии</p>
+                        </a>
+                        <a class="cards">
+                            <p><img src="assets/img/card02.png" alt=""></p>
+                            <p>стены и фасады</p>
+                        </a>
+                        <a class="cards">
+                            <p><img src="assets/img/card03.png" alt=""></p>
+                            <p>периметр дома и цоколь</p>
+                        </a>
+                        <a class="cards">
+                            <p><img src="assets/img/card04.png" alt=""></p>
+                            <p>плоская и  скатная кровля</p>
+                        </a>
+                        <a class="cards">
+                            <p><img src="assets/img/card05.png" alt=""></p>
+                            <p>фундамент и мостики холода</p>
+                        </a>
+                        <a class="cards">
+                            <p><img src="assets/img/card06.png" alt=""></p>
+                            <p>полы и потолки</p>
+                        </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" >
+        <div class="container-fluid">
+            <div class="row-fluid">
+                <div class="col-lg-12">
+                    <img src="assets/img/logo2.png" alt="" class="center-block">
+                    <h1>технические характеристики</h1>
+
+                    <div class="table-responsive res1">
+                        <table class="table table-striped shadowar">
+                            <tbody>
+                                <tr class="success">
+                                    <td>ТЕХНИЧЕСКИЕ ХАРАКТЕРИСТИКИ</td>
+                                    <td>НОРМАТИВ</td>
+                                    <td>ПСБ - 20</td>
+                                    <td>ПСБ - 30</td>
+                                    <td>ПСБ - 40</td>
+                                    <td>ПСБ - 50</td>
+                                    <td>ПСБ - 60-120</td>
+                                </tr>
+                                <tr>
+                                    <td>Плотность кг/м<sup>3</sup></td>
+                                    <td>ГОСТ15588-86</td>
+                                    <td>30-32</td>
+                                    <td>30-32</td>
+                                    <td>30-32</td>
+                                    <td>30-32</td>
+                                    <td>30-32</td>
+                                </tr>
+                                <tr>
+                                    <td>Теплопроводность при 25°С (<sub>&#955;25</sub>) Вт/мК</td>
+                                    <td>ГОСТ 7076-99</td>
+                                    <td>0,03</td>
+                                    <td>0,03</td>
+                                    <td>0,03</td>
+                                    <td>0,03</td>
+                                    <td>0,03</td>
+                                </tr>
+                                <tr>
+                                    <td>Теплопроводность (&#955;<sub>A</sub>) Вт/мК</td>
+                                    <td>ГОСТ 7076-99</td>
+                                    <td>0,031</td>
+                                    <td>0,031</td>
+                                    <td>0,031</td>
+                                    <td>0,031</td>
+                                    <td>0,031</td>
+                                </tr>
+                                <tr>
+                                    <td>Теплопроводность (&#955;<sub>Б</sub>) Вт/мК </td>
+                                    <td>ГОСТ 7076-99</td>
+                                    <td>0,032</td>
+                                    <td>0,032</td>
+                                    <td>0,032</td>
+                                    <td>0,032</td>
+                                    <td>0,032</td>
+                                </tr>
+                                <tr>
+                                    <td>Прочность на сжатие при 10% деформации, МПа</td>
+                                    <td>ГОСТ 15588-86</td>
+                                    <td>0,2</td>
+                                    <td>0,25</td>
+                                    <td>0,41</td>
+                                    <td>0,5</td>
+                                    <td>0,6</td>
+                                </tr>
+                                <tr>
+                                    <td>Предел прочности при изгибе, МПа</td>
+                                    <td>ГОСТ 15588-86</td>
+                                    <td>0,25</td>
+                                    <td>0,4</td>
+                                    <td>0,4</td>
+                                    <td>0,4 - 0,7</td>
+                                    <td>0,4 - 0,7</td>
+                                </tr>
+                                <tr>
+                                    <td>Модуль упругости, МПА</td>
+                                    <td>&nbsp;</td>
+                                    <td>15</td>
+                                    <td>15</td>
+                                    <td>18</td>
+                                    <td>18</td>
+                                    <td>18</td>
+                                </tr>
+                                <tr>
+                                    <td>Водопоглощение за 24 часа, % по объему</td>
+                                    <td>ГОСТ 15588-86</td>
+                                    <td>0,4</td>
+                                    <td>0,4</td>
+                                    <td>0,4</td>
+                                    <td>0,4</td>
+                                    <td>0,4</td>
+                                </tr>
+                                <tr>
+                                    <td>Паропроницаемость (&#956;) мг/м·ч·Па</td>
+                                    <td>ГОСТ 25898-83</td>
+                                    <td>0,008</td>
+                                    <td>0,007</td>
+                                    <td>0,007</td>
+                                    <td>0,007</td>
+                                    <td>0,008</td>
+                                </tr>
+                                <tr>
+                                    <td>Капилярное увлажнение</td>
+                                    <td>&nbsp;</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>&nbsp;</td>
+                                    <td>0</td>
+                                </tr>
+                                <tr>
+                                    <td>Коэфициент линейного теплового расширения</td>
+                                    <td>&nbsp;</td>
+                                    <td>7x10-5</td>
+                                    <td>7x10-5</td>
+                                    <td>7x10-5</td>
+                                    <td>7x10-5</td>
+                                    <td>7x10-5</td>
+                                </tr>
+                                <tr>
+                                    <td>Пожарные характеристики</td>
+                                    <td>ГОСТ 30244-94</td>
+                                    <td>Г1</td>
+                                    <td>Г1</td>
+                                    <td>Г1</td>
+                                    <td>Г1</td>
+                                    <td>Г1</td>
+                                </tr>
+                                <tr>
+                                    <td>Температура применения, °С</td>
+                                    <td>-50...+75</td>
+                                    <td>-50...+75</td>
+                                    <td>-50...+75</td>
+                                    <td>-50...+75</td>
+                                    <td>-50...+75</td>
+                                    <td>-50...+75</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+<h1>какие задачи решает?</h1>
+
+                    <table class="table table-redgreen">
+                        <tbody>
+                        <tr>
+                            <td><p class="frowning">&ensp;</p>
+                                <div>Потери тепла</div>
+                            </td>
+                            <td><p class="smiling">&ensp;</p>
+                                <div>Высокая теплоизоляция, эффективность в суровых погодных условиях.</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><p class="frowning">&ensp;</p>
+                                <div>Проникновение шума</div>
+                            </td>
+                            <td><p class="smiling">&ensp;</p>
+                                <div>Индекс снижения приведенного уровня ударного шума — 25 Дб.</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><p class="frowning">&ensp;</p>
+                                <div>Грибок, сырость</div>
+                            </td>
+                            <td><p class="smiling">&ensp;</p>
+                                <div>Гидроизоляционные свойства. Низкое влагопоглощение – 0,1%</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><p class="frowning">&ensp;</p>
+                                <div>Выделение вредных веществ</div>
+                            </td>
+                            <td><p class="smiling">&ensp;</p>
+                                <div>Благодаря радикальной полимеризации стирола PENOBOARD не токсичен, биологически нейтрален, отвечает высоким экологическим стандартам.</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><p class="frowning">&ensp;</p>
+                                <div>Расточительность</div>
+                            </td>
+                            <td><p class="smiling">&ensp;</p>
+                                <div>В масштабах государства – снижение энергоемкости производства и экономия традиционных ресурсов, в масштабах каждого отдельного дома – сбережение тепла и экологии помещений, снижение трат на отоплении.</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><p class="frowning">&ensp;</p>
+                                <div>Пожароопасность</div>
+                            </td>
+                            <td><p class="smiling">&ensp;</p>
+                                <div>Пожаробезопасность – Г1. PENOBOARD не поддерживает горение после прекращения контакта с открытым огнем.</div></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                </div>
+            </div>
+
+    </section>
+	
+	<!-- Photo Section -->
+    <section id="photo">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <img src="assets/img/logo2.png" alt="" class="center-block">
+                    <h1>сертификаты качества И ПРЕМИИ</h1>
+
+                    <div class="sertif-gallery">
+                        <a data-fancybox="gallery" title="Спрашиваю сразу: его посвятить или казнить? А то в прошлый раз перепутали :)" href="uploads/pictures/pict01.jpg"><img src="assets/img/sertif1.jpg" alt=""></a>
+                        <a data-fancybox="gallery" title="Раньше не то что щас - и лесов было много и люди были ближе друг к другу" href="uploads/pictures/pict02.jpg"><img src="assets/img/sertif2.jpg" alt=""></a>
+                        <a data-fancybox="gallery" title="Ты вступил бой" href="uploads/pictures/pict03.jpg"><img src="assets/img/sertif3.jpg" alt=""></a>
+                        <a data-fancybox="gallery" title="Ты выступил из боя" href="uploads/pictures/pict04.jpg"><img src="assets/img/sertif4.jpg" alt=""></a>
+                        <a data-fancybox="gallery" title="Изысканная ранне средневековая эротика" href="uploads/pictures/pict05.jpg"><img src="assets/img/sertif5.jpg" alt=""></a>
+                    </div>
+
+                    <div class="premia">
+
+                        <h3>Премия:<br>
+                            100 лучших товаров Украины  2010 и 2011</h3>
+                        <img src="assets/img/logo_top100.png" alt="" >
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+	
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>контакты</h1>
+
+                    <p class="lead text-center">ООО «Производственно коммерческая фирма «Элит Пласт»  73000, Украина, г. Херсон, ул Советская, 41-А</p>
+
+                    <p class="text-center">тел:+38(0552)123-456, 789-403; факс:+38(0552)123-214 e-mail:	<a href="mailto:info@novaboard.com?subject=mister_X" title="Запустить почтовую программу">info@novaboard.com</a> </p>
+
+                </div>
+            </div>
+        </div>
+        <!-- id="map class="hidden-xs"" -->
+        <div  id="map"></div>
+
+    </section>
+
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <a href="#"><img src="assets/img/logo-miniwhite.png" alt=""></a>
+                    <h1>novaboard</h1>
+                    <h6>2017 ©</h6>
+                    <h5>мы в социальных сетях</h5>
+
+<div class="social">
+    <a href="#" class="linkedin-white">&ensp;</a>
+    <a href="#" class="vc-white">&ensp;</a>
+</div>
+
+                </div>
+            </div>
+            <h4>Разработка сайта: Шарко Виктор, на экзамен в <a target="_blank" href="http://wezom.com.ua/">студии WEZOM</a></h4>
+        </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="LoginModal" tabindex="-1" role="dialog"  aria-labelledby="LoginModal"  aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Закрыть</span></button>
+
+                    <h4 class="modal-title">Форма авторизации</h4>
+
+                </div>
+                <div class="modal-body">
+
+                        <h4><span class="glyphicon glyphicon-log-in" aria-hidden="true" style="font-size: large; color:black"></span> Вход на сайт</h4>
+
+
+                        <form  role="form" method="post" action="">
+                            <div class="form-group">
+                                <label for="inputEmail">Логин:</label>
+                                <input class="form-control" type="text" id="inputEmail" name="login_name" />
+                            </div>
+                            <div class="form-group">
+                                <label for="inputPassword">Пароль:</label>
+                                <input class="form-control" type="password" id="inputPassword" name="login_password" />
+                            </div>
+                            <div class="checkbox">
+                                <label for="login_not_save"><input type="checkbox" name="login_not_save" id="login_not_save" value="1" />&nbsp;Чужой компьютер</label>
+                            </div>
+                            <button type="submit" class="btn btn-success"><i class="glyphicon glyphicon-log-in" aria-hidden="true"></i> Войти</button>
+                            <input class="form-control" name="login" type="hidden" id="login" value="submit" />
+
+                        </form>
+
+                </div>
+              <div class="modal-footer">
+                  <a href="#" class="btn btn-default"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span> Регистрация на сайте!</a>
+                  <a href="#" class="btn btn-default"><span class="glyphicon glyphicon-book" aria-hidden="true"></span> Забыли пароль?</a>
+						</div>
+            </div>
+        </div>
+    </div>
+    <!-- Login Modal -->
+
+</body>
+
+<!-- jQuery -->
+<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.2.4.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="http://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/bootstrap.js"></script>
+
+<!-- Scrolling Nav JavaScript -->
+<script src="assets/js/jquery.easing.min.js"></script>
+<script src="assets/js/script.js"></script>
+
+<!-- FancyBox files -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.js"></script>
+
+<!-- Google map api -->
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyApnrUdUURSAi6xDqIUnuvlWj27e4OHVk4&callback=initMap">
+</script>
+
+
+
+</html>

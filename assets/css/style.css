@@ -1,0 +1,1019 @@
+@charset "UTF-8";
+
+
+/*
+font-family: 'EuropeExt Bold', arial;
+font-family: 'EuropeExt Normal', arial; */
+
+
+@font-face {
+    font-family: 'EuropeExt Bold';
+    font-style: normal;
+    font-weight: 700;
+    src: local('EuropeExt Bold'), local('EuropeExt-Bold'),
+    url("../fonts/europeext-bold.woff") format('woff'),
+    url("../fonts/europeext-bold.ttf") format('truetype');
+}
+
+
+@font-face {
+    font-family: 'EuropeExt Normal';
+    font-style: normal;
+    font-weight: 400;
+    src: local('EuropeExt Normal'), local('EuropeExt-Normal'),
+        url("../fonts/europeext-normal.woff") format('woff'),
+        url("../fonts/europeext-normal.ttf") format('truetype')
+}
+
+
+
+/* Кастомизруем панель навигации */
+nav.navbar.navbar-default {
+    background-color: #01983b;
+}
+
+ul.nav.navbar-nav > li > a {
+    color: white;
+    text-transform: uppercase
+}
+nav.navbar a.navbar-brand {font-family: 'EuropeExt Bold', sans-serif; float: left; color: white}
+nav.navbar a.navbar-brand:focus {color: white}
+
+section .container, section .container-fluid {padding-top: 1.7rem; padding-bottom: 1.7rem }
+
+#vacations .container, #intro .container {overflow:hidden}
+
+
+/* ================ Первый блок =============================== */
+#intro {
+    background: #fff url('../img/art_museum_render_1.jpg') no-repeat fixed top center;
+    background-size: cover;
+}
+
+ /* картинка лого*/
+#intro .row-fluid div:first-child img {width: 396px; height: 56px; margin-top: 1rem;}
+
+.frst-tbl {
+    margin-top: 1rem;
+    font-family: Arial, sans-serif;
+}
+
+.frst-tbl tr:first-child > td:first-child {
+    text-align: left;
+}
+
+.frst-tbl tr:first-child > td:last-child {
+    text-align:right;
+}
+
+.frst-tbl tr:first-child > td a, .frst-tbl tr:first-child > td {
+    color: #01983b;
+    text-transform: uppercase
+}
+
+.frst-tbl tr:first-child > td a:hover {
+    text-decoration: underline;
+}
+
+.frst-tbl tr:nth-child(2) td {
+    font-weight: bold;
+    color: #2c2783;
+    text-align: left;
+}
+
+.frst-tbl form > input {
+    border: 0;
+    outline: none;
+    border-bottom-color: #bfbdd9;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+}
+
+.frst-tbl form > input:focus {
+    border-bottom-color: #2c2783;
+}
+
+.frst-tbl form .btn.btn-default {
+    padding: 6px 3px 3px;
+    border: 0;
+    margin: 0;
+    position: relative;
+    bottom: 5px;
+}
+
+/*  Социальные закладки  */
+
+.social {
+    display: inline-block;
+    width: auto;
+    height: auto;
+    padding: 0;
+}
+
+/*  Зеленые кнопки социальных сетей */
+
+.linkedin-green, .vc-green {
+    width: 21px;
+    height: 21px;
+    display: inline-block;
+    text-decoration: none;
+    position: relative;
+    bottom: 4px;
+}
+
+.linkedin-green:hover, .vc-green:hover {
+    background-color: yellow;
+    border-radius: 50%;
+}
+
+.linkedin-green {background-position: -8px -54px}
+.vc-green {background-position: -8px -185px}
+
+
+/* Карусель */
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+    width: 100%;
+    margin: auto;
+}
+
+#intro #myCarousel .carousel-caption h3{
+    font-family: 'EuropeExt Normal', sans-serif;
+    color: white;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+#intro #myCarousel .carousel-caption p{
+    text-transform: uppercase;
+    font-family: 'EuropeExt Bold', sans-serif;
+}
+
+    /* ==================================== о компании ========================================================*/
+#about {
+    background: #fff url('../img/render_2.jpg') no-repeat scroll top center;
+    background-size: cover;
+}
+
+
+#about .container img.center-block,
+#services .container-fluid img.center-block,
+#photo .container img.center-block {
+    width: 374px;
+    height: 29px;
+    margin-top: 2rem;
+}
+
+#about .container h1,
+#vacations .container h1,
+#services .container-fluid h1,
+#photo .container h1,
+.premia h3,
+#contact .container h1,
+footer .container-fluid h1{
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-family: 'EuropeExt Bold', sans-serif;
+    color: rgb(7, 61, 121);
+    text-align: center;
+}
+
+.container .row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#about .container article {
+    margin-top: 3.7rem;
+    font-family: "Arial", sans-serif;
+    color: #0a274d;
+    line-height: 1.214;
+    text-align: center;
+    width: 80%;
+    height: auto;
+}
+
+#about .container .btn-success.btn-lg {
+    text-transform: uppercase;
+    font-family: 'EuropeExt Bold', sans-serif;
+    text-shadow: 1px 1px 2px black, 0 0 1px black;
+    box-shadow: 0 3px 0 0 lightgray;
+    width: 29rem;
+    margin-top: 2.5rem;
+}
+
+
+/* =============== Вакансии =============================================*/
+#vacations {
+    background: #fff url('../img/render_3.jpg') no-repeat fixed top center;
+    background-size: cover;
+}
+
+
+#vacations .container h1 {
+    margin-top: 2rem;
+}
+
+/* Блоки с фотографиями строителей */
+.build1, .build2 {display: block;
+    background: darkgreen url('../img/building-under-construction-01.jpg') no-repeat scroll top center;
+    background-size: cover;
+}
+
+.build2 {
+    background-image: url('../img/building-under-construction-02.jpg');
+}
+
+.build1 h2, .build2 h2 {
+    display: inline-block;
+    text-transform: uppercase;
+    font-family: Arial, sans-serif;
+    color: white;
+    font-size: 1.6rem;
+}
+
+.build1 h2 { float: right; margin-right: 30px; }
+
+.build2 h2{ float: left; margin-left: 30px }
+
+.build1 ul li, .build2 ul li {
+    display: block;
+    width: auto;
+    background-color: #01983b;
+    font-family: Arial, sans-serif;
+    font-size: .9rem;
+    color: white;
+    list-style: none;
+    margin: 4px 0;
+    padding: 4px 30px 2px 30px;
+    text-transform: uppercase;
+    clear: both;
+}
+
+.build1 ul li {
+    text-align: right;
+    float: right;
+    box-shadow: -2.5rem 0 0 0 rgba(1,152,59,0.7),-6.2rem 0 0 0 rgba(1,152,59,0.4);
+}
+
+.build2 ul{
+    padding-left: 0;
+}
+
+.build2 ul li {
+    text-align: left;
+    float: left;
+    box-shadow: 2.5rem 0 0 0 rgba(1,152,59,0.7),6.2rem 0 0 0 rgba(1,152,59,0.4);
+}
+
+.build1 p, .build2 p {
+    text-align: left;
+    text-indent: 0;
+    margin: 0;
+    width: 100%;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    font-size: 1.2rem;
+    padding-top: 3px;
+    padding-bottom: 4px;
+    font-family: 'EuropeExt Bold', sans-serif;
+    background-color: rgba(255, 255, 255,0.2);
+}
+
+
+
+
+.build1 p img, .build2 p img {
+    width: 19px;
+    height: 16px;
+    margin-right: .7rem;
+}
+
+ /* класс для карточки c товаром*/
+
+.cards{
+    display: inline-block;
+    width: 180px;
+    height: 300px;
+    text-decoration: none;
+    text-indent: 0;
+    list-style-type: none;
+    padding-left: 0;
+    vertical-align: top;
+}
+
+.cards:hover { cursor: pointer}
+.cards:focus {outline: none;}
+.cards:active {cursor: wait;}
+
+.cards > *:first-child {
+    display: block;
+    width: 180px;
+    height: 180px;
+    background: transparent url('../img/rr_card.png') no-repeat scroll top center;
+    background-size: 100%;
+    padding: 42px 30px 10px 31px;
+}
+
+.cards *:first-child img {
+    width: 105px;
+    height: 105px;
+}
+
+.cards > *:last-child {
+    padding: 16px 25px 8px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: #01983b;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.cads-block {
+    margin-top: 2rem;
+    text-align: center
+}
+
+
+/* =============Продукция ================================================*/
+#services {
+    background: #fff url('../img/render_4.jpg') no-repeat scroll top center;
+    background-size: cover;
+}
+
+
+#services .container-fluid h1 { color: rgb(1, 152, 59)}
+
+
+#services .table-striped {
+    border: solid 2px lightgray;
+    margin: 0 auto;
+    font-size: .8rem;
+}
+#services .table-striped > tbody > tr:nth-child(even) > td {background-color: #f2f5f7}
+#services .table-striped > tbody > tr:nth-child(odd) > td {background-color: white}
+#services table.table-striped > tbody > tr.success > td {
+    background-color: #139f49;
+    color: white;
+    font-weight: bold
+}
+
+.table-redgreen {
+    border-spacing: .5rem .7rem;
+    border-collapse: separate;
+    margin: 0 auto;
+    color: white;
+
+}
+
+
+.table-redgreen div {
+    text-align: left;
+    display: block;
+    margin-left: 50px;
+    margin-right: 2px;
+    padding-left: 0;
+
+}
+
+.table-redgreen tr > td:first-child {
+    background-color: #ff0000;
+    border:0;
+    width: 30%;
+    vertical-align: top;
+}
+
+.table-redgreen tr > td:last-child {
+    background-color: #01983b;
+    border:0;
+    width: 70%;
+}
+
+
+.frowning, .smiling {
+    display: block;
+    position: relative;
+    bottom: 0;
+    margin: 0 0 0 .5rem;
+    text-indent: 0;
+    float: left;
+    width: 30px;
+    height: 30px;
+    background-position: -8px -8px;
+
+}
+
+.smiling {
+    background-position: -8px -139px;
+}
+
+
+/* ==============  Фотографии ========================= */
+#photo {
+    background-color: #fff;
+    background-size: cover;
+}
+
+.sertif-gallery {
+  margin: 1rem 0;
+    text-align: center;
+}
+
+.sertif-gallery a:focus {
+    outline: none;
+}
+
+.sertif-gallery img {
+    width: 144px;
+    height: 205px;
+    margin: .5rem 1rem;
+}
+
+.sertif-gallery img:hover {cursor: zoom-in;}
+
+.sertif-gallery > img:first-child {
+    margin-left: 0;
+}
+
+.sertif-gallery > img:last-child {
+    margin-right: 0;
+}
+
+.premia {text-align: center; }
+
+.premia h3 {   font-size: 1.5rem;}
+
+.premia img {width: 111px; height: 96px}
+
+
+/* ============== Контакты =====================================================*/
+#contact {background-color: white}
+
+#contact .container {
+    display: block;
+    background-color: #01983b;
+    width: 69rem;
+    padding: 0 0 1rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    box-shadow: 0 3px 0 0 rgba(149,147,140,0.5);
+    position: relative;
+    top:1rem;
+    z-index: 2;
+}
+
+#contact .container h1 {color: white}
+
+#contact .container .lead.text-center{
+    display: block;
+    line-height: 1.1em;
+    color: white;
+    margin-left:auto;
+    margin-right: auto;
+    width: 37.5rem;
+}
+
+#contact .container .text-center {
+    display: block;
+    width: 23.1rem;
+    margin-left:auto;
+    margin-right: auto
+}
+
+#contact .container .text-center,
+#contact .container .text-center > a{
+
+    color: white;
+
+}
+
+#contact .container .text-center > a:hover {
+    text-decoration: underline;
+}
+
+#map {
+    height: 19rem;
+}
+
+/* ==========  Подвал сайта ================== */
+
+footer {
+    background-color: #01983b;
+}
+
+footer .container-fluid {
+    background: transparent url('../img/footer.png') no-repeat scroll bottom center;
+    background-size: 100% auto;
+    display:block;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    text-align: center;
+}
+footer .container-fluid > div > div {text-align: inherit;  padding-bottom: 4rem;}
+footer .container-fluid img { width: 47px; height: 39px}
+footer .container-fluid a > img:hover {outline: blue solid medium}
+
+footer .container-fluid h1, footer .container-fluid h6 {
+    color: white; margin: .2rem 0;
+}
+
+footer .container-fluid h6, footer .container-fluid h5 {font-size: .6rem;}
+
+footer .container-fluid h5, footer .container-fluid h4, footer .container-fluid h4 > a {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    margin-top: 1rem
+}
+
+footer .container-fluid h4 {
+    display: inline-block;
+}
+
+footer .container-fluid h4, footer .container-fluid h4 > a {
+
+    font-size: .75rem;
+    text-decoration: none;
+}
+
+footer .container-fluid h4 > a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+ /*  Белые кнопки социальных сетей */
+
+.linkedin-white, .vc-white {
+    width: 33px;
+    height: 32px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.linkedin-white:hover, .vc-white:hover {
+    background-color: black;
+    border-radius: 50%;
+}
+
+.linkedin-white {background-position: -8px -91px;}
+.vc-white {background-position: -8px -222px;}
+
+
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!! Адаптивность !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+/* Устройства с большим экраном (компьютеры, 1200px и выше) */
+@media (min-width: 1200px) {
+
+    /* ++++++++++++ Задаем REM ++++++++++++++++*/
+    html { font-size: 16px!important;}
+
+
+    ul.nav.navbar-nav {
+        display:table;table-layout: fixed; width: 100%;
+    }
+
+    ul.nav.navbar-nav > li  {
+        display: table-cell; width: 142px;
+        text-align: center;
+    }
+
+    ul.nav.navbar-nav > li > a {
+        font: normal 16px/5pt Arial;
+        margin-top: 6px;
+    }
+
+    ul.nav.navbar-nav > li:first-child {
+        text-align: left;
+    }
+
+    ul.nav.navbar-nav > li:last-child {
+        text-align: right;
+    }
+
+    nav.navbar-default ul.navbar-nav > li.active > a,
+    nav.navbar-default ul.navbar-nav > li.active > a:hover,
+    nav.navbar-default li.navbar-nav > li.active > a:focus  {
+        padding: 9px;
+        margin-top: 10px;
+        margin-bottom: 0;
+        color: white!important;
+        background-color: #01983b!important;
+        border-top: 2px;
+        border-top-style: solid;
+        border-bottom: 2px;
+        border-bottom-style: solid;
+        border-color: white;
+    }
+    nav.navbar-default .navbar-nav > li > a:focus {color: white}
+
+    /********** Карусель *************************************/
+
+    #myCarousel {width: 1110px; height: auto; margin: 16px auto 2rem;}
+
+    #intro #myCarousel .carousel-caption {
+        bottom: 40px;
+    }
+
+    #intro #myCarousel .carousel-caption h3 {
+        font-size: 30px;
+    }
+
+    #intro #myCarousel .carousel-caption p {
+       font-size: 24px; margin-top: 14px;
+    }
+
+    #intro #myCarousel ol.carousel-indicators { bottom: 0;
+        left:11%;
+    }
+
+    #intro #myCarousel ol.carousel-indicators li {
+        width: 35px;
+        height: 15px;
+    }
+
+ /*End carucel*/
+
+    /* Тень, которая не для всех устройств  */
+
+    .shadowar {
+        box-shadow: none;
+        position: relative;
+        z-index: 20;
+    }
+    .shadowar:after {
+        content: "";
+        display: block;
+        position: absolute;
+        background: radial-gradient(ellipse at top, rgba(22,45,74,.8), rgba(22,45,74,.2));
+        width: 110%;
+        left:-5%;
+        z-index: -1;
+        height: 8%;
+        margin: 0 auto;
+        bottom: -6%;
+        border-radius: 80%;
+        box-shadow:  0 0 15px 10px rgba(22,45,74,.3);
+    }
+
+    /* ==================== о компании  ======================= */
+
+
+
+
+    /* =============== Продукция ===================================== */
+    #services .table-responsive.res1{
+            width: 1165px;
+            padding: 0 60px 40px;
+            margin: 0 auto;
+    }
+    #services .table-striped {
+        width: 980px;
+        display: block;
+    }
+
+    .table-striped > tbody {display: table; width: 100%}
+    .table-striped > tbody > tr {display: table-row}
+    .table-striped > tbody > tr > td {display: table-cell}
+
+    /* Красно-зеления табица  */
+
+    .table-redgreen {
+        width: 980px;
+    }
+
+
+}
+
+/* Устройства со средним экраном (ноутбуки и компьютеры, 992px и выше) */
+@media (min-width: 992px) {
+
+/* ++++++++++++ В панели навигации ++++++++++ */
+    ul.nav.navbar-nav > li > a {
+        display: inline-block;
+        width: auto;
+    }
+    .navbar {
+        padding: 20px 0;
+        transition: background .5s ease-in-out,padding .5s ease-in-out;
+    }
+    .top-nav-collapse {
+        padding: 0;
+    }
+
+/* ==================== о компании  ======================= */
+    .frst-tbl {  float: right;}
+
+/* =============  Вакакнсии ============== */
+    .build1, .build2 {
+        width: 100%; height: 288px;
+    }
+
+    .build1 > p {
+        text-align: right;
+        padding-left: 0;
+        padding-right: 60px;
+    }
+    
+    .build2 p { padding-left:30px}
+
+
+    /* =============== Продукция ===================================== */
+    /* Белая таблица с зеленым заголовком */
+    .table-responsive.res1{
+        margin-top: 1rem;
+        padding: 0 1.5rem 1rem;
+        background-color: rgba(239,241,243,0.5);
+    }
+/* Тени красно зеленой таблице */
+    .table-redgreen tr > td:first-child {
+        box-shadow: -40px 0 0 0 rgba(255,0,0,0.6), -100px 0 0 0 rgba(255,0,0,0.3);
+    }
+
+    .table-redgreen tr > td:last-child {
+        box-shadow: 40px 0 0 0 rgba(1,152,59,0.6), 100px 0 0 0 rgba(1,152,59,0.3);
+    } 
+
+}
+
+
+/* Устроства с маленьким экраном (планшеты, 768px и выше) */
+@media (min-width: 768px) {
+
+    /* ====================в первом блоке ================================*/
+    #intro {margin-top: 5rem}
+    #intro .row-fluid div:first-child img {float: left}
+
+    /* Кастомизируем шрифты первой таблицы*/
+    .frst-tbl {width: 420px;}
+    .frst-tbl tr:first-child > td a, .frst-tbl tr:first-child > td {font-size: .75rem;}
+    .frst-tbl form > input {
+        width: 390px
+    }
+    .frst-tbl form .btn.btn-default {
+        font-size: 1rem
+    }
+    .frst-tbl tr:nth-child(2) td {
+        font-size: 1rem;
+        line-height:1rem
+    }
+    /*Карусель */
+
+    #intro #myCarousel .carousel-caption {
+        width: 70%; height: 25%;
+        background-color: rgba( 0, 0, 0, 0.4); padding: 2%;
+        text-align: left; left: 0;
+    }
+
+    #intro #myCarousel ol.carousel-indicators { bottom: 0;
+        left:14%;
+    }
+
+    #intro #myCarousel ol.carousel-indicators li {
+        border-radius: 0;
+        border: 0;
+        width: 35px;
+        height: 15px;
+        background-color: white;
+    }
+
+    #intro #myCarousel ol.carousel-indicators li.active {
+        background-color: #01983b;
+        position: relative;
+        bottom:1px;
+    }
+
+    /*============= О компаниии ===========================*/
+
+    #about .container .btn-success.btn-lg {
+        font-size: 1.5rem;
+    }
+
+    /* Стиль для плеера */
+
+    .video-holder {width: 640px; padding: 0}
+
+    /*  Эффект при наведени на карточку */
+
+    .cads-block .cards:nth-child(even) > *:first-child {
+        margin-top: 40px;
+    }
+
+    .cards > *:first-child {transition: margin-top .5s ease-in-out;}
+
+    .cads-block .cards:nth-child(odd):hover > *:first-child {
+        margin-top: 40px;
+    }
+
+    .cads-block .cards:nth-child(even):hover > *:first-child {
+        margin-top: 0;
+    }
+
+
+
+}
+
+/* стили для md-устройств с шириной viewport, находящейся в диапазоне 992px - 1199px */
+@media (min-width: 991px) and (max-width: 1199px) {
+
+    /* ++++++++++++ Задаем REM ++++++++++++++++*/
+    html { font-size: 14px!important;}
+
+    /* Карусель*/
+    #intro #myCarousel {margin-top: 2%}
+
+
+    /* =========== Вакансии ===================== */
+
+
+
+
+    /* ================ Продукция =============*/
+
+    #services .table-striped {
+        width: 900px;
+    }
+
+    .table-redgreen {
+        width: 900px;
+    }
+
+}
+
+/* стили для sm-устройств с шириной viewport, находящейся в диапазоне 768px - 991px */
+@media (min-width: 768px) and (max-width: 991px) {
+
+    /* ++++++++++++ Задаем REM ++++++++++++++++*/
+    html { font-size: 12px!important;}
+
+    /* ++++++++++++ В панели навигации ++++++++++ */
+    .collapse.navbar-collapse.navbar-ex1-collapse {
+        font-size: 12px;
+        display: inline-block; max-width: 580px; float: right;
+    }
+
+    /* ============================ первом блоке  ==========================*/
+    #intro .row-fluid div:first-child {text-align: center}
+    .frst-tbl { margin-right: auto}
+
+/* Карусель*/
+    #intro #myCarousel {margin-top: 1%}
+    #intro #myCarousel .carousel-caption {
+        bottom: 10%;
+    }
+
+    #intro #myCarousel .carousel-caption h3 {
+        font-size: medium;
+    }
+
+    #intro #myCarousel .carousel-caption p {
+    font-size: medium; margin-top: 10px;
+    }
+
+    #intro #myCarousel ol.carousel-indicators { bottom: 0;
+        left:15%;
+    }
+
+    /*End carucel*/
+
+ /* =========== Вакансии ===================== */
+
+ .build1, .build2 {
+     margin: 0 auto;
+     width: 570px; height: 288px;
+ }
+    .build2 p, .build1 p {
+    padding-left: 1rem;
+    }
+
+    /* =============== Продукция === */
+
+    #services .table-striped {
+        width: 770px;
+        font-size: 1rem;
+    }
+
+    .table-redgreen {
+        width: 600px;
+    }
+
+    /* Контакты */
+
+    #contact .container {
+        width: 55rem;}
+
+}
+
+
+/* стили для xs-устройств с шириной viewport менее 768px */
+
+@media (max-width: 767px) {
+    /* ++++++++++++ Задаем REM ++++++++++++++++*/
+    html { font-size: 10px!important;}
+
+    /* ++++++++++++ В панели навигации ++++++++++ */
+    nav.navbar-default .navbar-toggle .icon-bar {
+        background-color: lightgray;
+    }
+
+    nav.navbar-default .navbar-toggle:hover .icon-bar {
+        background-color: darkslategray;
+    }
+
+    /* ============================ первом блоке  ==========================*/
+    #intro {margin-top: 3.5rem}
+     /* Первая таблица*/
+    .frst-tbl {margin-bottom: 2rem}
+    .frst-tbl form > input {  width: 90% }
+
+
+    /* ================= Вакансиии ========================*/
+
+    .build1, .build2 {
+        display: table;
+        width: 100%; height: 200px;
+        
+    }
+    
+    .build2 {margin-top:1rem}
+    
+    .build2 p, .build1 p {
+        padding-left: 1rem;
+    }
+    #vacations .col-xs-12 {width: 96%; margin-left: 2%; overflow:hidden}
+
+
+    /* =========== Продукция =====================*/
+
+    #services .table-striped {
+        max-width: 700px;
+        font-size: 1.1rem;
+    }
+
+
+    #contact .container {
+        width: 80%;
+    }
+
+
+
+    /*  Настриваем плеер  */
+
+     .video-holder {
+         position: relative;
+         background-color: red;
+         padding-top: 56.25%;
+     }
+
+    #player {
+        position: absolute;
+        top: 0;
+        left:0;
+        width: 100%!important;
+        height: 100%!important;
+
+    }
+
+
+}
+
+
+/* xs-размер (<=575px) */
+@media (max-width: 575px) {
+    /* CSS для ширины до 575px (включительно) */
+    img {
+        max-width: 100% !important;
+    height: auto !important;
+    }
+
+    .table-redgreen tr > td:first-child {display: none}
+    /* =========== Контакты  ==================*/
+    #contact .container .lead.text-center {width: auto}
+}
+
+
+
+
+
+
+/* -------------------------- Спрайт ------------- */
+.frowning,
+.smiling,
+.linkedin-green,
+.vc-green,
+.linkedin-white,
+.vc-white {
+    background-image: url('../img/spritesheet.png');
+    background-repeat: no-repeat;
+}
+
+/* ---------------- Бекгаунд узорчик ------------ */
+
+#about .container .btn-success.btn-lg,
+#contact .container,
+footer {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAFCAYAAAB4ka1VAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MDczNkU0MDJCRTc1MTFFNDk3OENERTBGNEIyMTI2RDYiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MDczNkU0MDNCRTc1MTFFNDk3OENERTBGNEIyMTI2RDYiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDowNzM2RTQwMEJFNzUxMUU0OTc4Q0RFMEY0QjIxMjZENiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDowNzM2RTQwMUJFNzUxMUU0OTc4Q0RFMEY0QjIxMjZENiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PnxWvKQAAAAnSURBVHjaYvj//78UEDPgwjAGLkVSKBx0SWQT0BVJoVuB0ySAAAMABdZ4WQkeIHMAAAAASUVORK5CYII=');
+}
+

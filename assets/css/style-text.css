@@ -1,0 +1,87 @@
+﻿@charset "UTF-8";
+
+
+.breadcrumb {background-color: transparent; border-radius: 0;}
+
+.breadcrumb > li, .breadcrumb > li > a {
+	font-size: 1rem;
+	color: #5b5b5b;
+    font-weight: bold;
+	font-family: Arial, sans-serif;
+}
+
+.breadcrumb > li > a {text-decoration: underline;}
+
+.breadcrumb > li > a:hover {text-decoration: double}
+
+.breadcrumb > li + li:before {
+	padding: 0 5px;
+	font-size: 1rem;
+	color: #5b5b5b;
+	content: ">";
+}
+
+
+
+.intextow {
+	background-color: white;
+	margin: 0 15px 1rem !important;
+	padding: 1em;
+	box-shadow: 0 0 0 .7rem rgba(219,246,232,.7)
+}
+
+#about .intextow h1,
+#about .intextow h2,
+#about .intextow h3,
+#about .intextow h4,
+#about .intextow h5,
+#about .intextow h6 {
+	font-family: Arial, sans-serif;
+	color: rgb(91, 91, 91);
+	font-weight: bold;
+	line-height: 1.2;
+	text-align: left;
+	text-transform: none !important;
+}
+
+#about .intextow h1 {font-size: 2rem}
+#about .intextow h2 {font-size: 1.8rem}
+#about .intextow h3 {font-size: 1.6rem}
+#about .intextow h4 {font-size: 1.4rem}
+#about .intextow h5 {font-size: 1.2rem}
+#about .intextow h6 {font-size: 1rem}
+
+#about .intextow h1.center-block {
+	text-align: center; font-size: 4rem;
+	font-weight: normal;
+}
+
+.intextow p {text-align: left; font-size: .9rem; margin: 1rem 0}
+
+#about .intextow .lead {
+	font-weight: bold;
+	font-size: large;
+}
+
+#about .intextow .text-center {
+	text-align: center; line-height: 2;
+}
+
+.bordur {
+	font-size: 1.8rem !important;  /* Размер шрифта */
+	border-bottom: .1rem solid black; /* Параметры линии под текстом */
+	font-weight: normal; /* Убираем жирное начертание */
+	padding-bottom: 5px; /* Расстояние от текста до линии */
+}
+
+.intextow .form-horizontal .control-label {
+	text-align: left;
+}
+
+.form-horizontal {
+	background-color: #f5f5f5;
+	border-radius: 8px;
+	padding: 1rem 1.5rem;
+	border: solid 2px lightgray;
+}
+
